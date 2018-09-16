@@ -13,5 +13,5 @@ script for query data openweathermap api, normalize and inject into kafka topic
 
 - Execute app using docker image:
 
-`docker run --env KAFKA_BROKER=X.X.X.X --env KAFKA_PORT=9092 --env KAFKA_TOPIC='envsensor' -ti wjjpt/envsensor2k`
+`docker run --env APIKEY="abc123abc123abc123" --env LONGITUDE="-6.025" --env LATITIDE="37.375" --env KAFKA_BROKER="127.0.0.1" --env KAFKA_PORT="9092" --env KAFKA_TOPIC="envsensor" -ti wjjpt/envsensor2k`
 
